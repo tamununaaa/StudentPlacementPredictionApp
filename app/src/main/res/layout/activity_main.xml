@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFAAA5"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="STUDENT PLACEMENT PREDICTOR"
+        android:textAlignment="center"
+        android:textColor="#3F3B6C"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cgpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        android:hint="CGPA"
+        android:textColor="#432C51"
+        android:textColorHint="#432C51"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv" />
+
+    <EditText
+        android:id="@+id/iq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#432C51"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginEnd="16dp"
+        android:hint="IQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#432C51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cgpa" />
+
+    <EditText
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Profile Score"
+        android:textColor="#432C51"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#432C51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iq" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="PREDICT"
+        android:textColor="#DCEDC1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/profile" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"
+            app:layout_constraintTop_toBottomOf="@id/button"
+            android:layout_marginTop="90dp"
+            android:textColor="#3F3B6C"
+            android:textAlignment="center"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
